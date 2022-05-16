@@ -16,6 +16,7 @@
 		DF2B1BD02832C540006B0BDE /* WordScramble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B1BCF2832C540006B0BDE /* WordScramble.swift */; };
 		DF2B1BD22832C582006B0BDE /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF2B1BD12832C582006B0BDE /* SleepCalculator.mlmodel */; };
 		DF2B1BD42832C59A006B0BDE /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B1BD32832C59A006B0BDE /* Animations.swift */; };
+		DF2B1BD62832EE7F006B0BDE /* iExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B1BD52832EE7F006B0BDE /* iExpense.swift */; };
 		DF42312C2810A3B600546F96 /* AppSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42312B2810A3B600546F96 /* AppSUIApp.swift */; };
 		DF42312E2810A3B600546F96 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42312D2810A3B600546F96 /* Multiplication.swift */; };
 		DF4231302810A3B900546F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF42312F2810A3B900546F96 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		DF2B1BCF2832C540006B0BDE /* WordScramble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordScramble.swift; sourceTree = "<group>"; };
 		DF2B1BD12832C582006B0BDE /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		DF2B1BD32832C59A006B0BDE /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		DF2B1BD52832EE7F006B0BDE /* iExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpense.swift; sourceTree = "<group>"; };
 		DF4231282810A3B600546F96 /* AppSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF42312B2810A3B600546F96 /* AppSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSUIApp.swift; sourceTree = "<group>"; };
 		DF42312D2810A3B600546F96 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				DF2B1BCD2832C4ED006B0BDE /* BetterRest.swift */,
 				DF2B1BD32832C59A006B0BDE /* Animations.swift */,
 				DF2B1BCF2832C540006B0BDE /* WordScramble.swift */,
+				DF2B1BD52832EE7F006B0BDE /* iExpense.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				DF42312E2810A3B600546F96 /* Multiplication.swift in Sources */,
 				DF2B1BD42832C59A006B0BDE /* Animations.swift in Sources */,
+				DF2B1BD62832EE7F006B0BDE /* iExpense.swift in Sources */,
 				DF2B1BC82832C3E4006B0BDE /* WeSplit.swift in Sources */,
 				DF2B1BD22832C582006B0BDE /* SleepCalculator.mlmodel in Sources */,
 				DF2B1BCE2832C4ED006B0BDE /* BetterRest.swift in Sources */,
