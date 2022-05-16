@@ -125,8 +125,8 @@ struct MultiplicationView: View {
                                     .foregroundColor(correct ? .green : .red)
                                 Text("\(questions[i].text) \(answers[i])")
                                 if !correct {
+                                    Spacer()
                                     Text("Correct answer: \(questions[i].answer)")
-                                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
                                 }
                             }
                         }
