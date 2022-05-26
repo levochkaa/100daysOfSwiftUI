@@ -24,6 +24,8 @@
 		DF68E5832838FD7D00D4E68B /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5822838FD7D00D4E68B /* astronauts.json */; };
 		DF68E5852838FD8400D4E68B /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5842838FD8400D4E68B /* missions.json */; };
 		DF68E6372839182400D4E68B /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6362839182400D4E68B /* Moonshot.swift */; };
+		DF68E6392839751600D4E68B /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6382839751600D4E68B /* Drawing.swift */; };
+		DF68E63B284023BA00D4E68B /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E63A284023BA00D4E68B /* Habits.swift */; };
 		DFEEDB4F282EEC7400D88DAD /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEEDB4E282EEC7400D88DAD /* Preset.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		DF68E5822838FD7D00D4E68B /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		DF68E5842838FD8400D4E68B /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		DF68E6362839182400D4E68B /* Moonshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moonshot.swift; sourceTree = "<group>"; };
+		DF68E6382839751600D4E68B /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		DF68E63A284023BA00D4E68B /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
 		DFEEDB4E282EEC7400D88DAD /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +76,8 @@
 				DF2B1BCF2832C540006B0BDE /* WordScramble.swift */,
 				DF2B1BD52832EE7F006B0BDE /* iExpense.swift */,
 				DF68E6362839182400D4E68B /* Moonshot.swift */,
+				DF68E6382839751600D4E68B /* Drawing.swift */,
+				DF68E63A284023BA00D4E68B /* Habits.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 				DF2B1BCE2832C4ED006B0BDE /* BetterRest.swift in Sources */,
 				DF2B1BCC2832C46A006B0BDE /* ExtensionsModifiers.swift in Sources */,
 				DF2B1BCA2832C429006B0BDE /* GuessTheFlag.swift in Sources */,
+				DF68E6392839751600D4E68B /* Drawing.swift in Sources */,
 				DF2B1BD02832C540006B0BDE /* WordScramble.swift in Sources */,
 				DF68E6372839182400D4E68B /* Moonshot.swift in Sources */,
+				DF68E63B284023BA00D4E68B /* Habits.swift in Sources */,
 				DFEEDB4F282EEC7400D88DAD /* Preset.swift in Sources */,
 				DF2B1BC42832C386006B0BDE /* ContentView.swift in Sources */,
 				DF42312C2810A3B600546F96 /* AppSUIApp.swift in Sources */,
