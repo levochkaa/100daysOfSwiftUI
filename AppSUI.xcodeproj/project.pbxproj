@@ -26,6 +26,7 @@
 		DF68E6372839182400D4E68B /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6362839182400D4E68B /* Moonshot.swift */; };
 		DF68E6392839751600D4E68B /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6382839751600D4E68B /* Drawing.swift */; };
 		DF68E63B284023BA00D4E68B /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E63A284023BA00D4E68B /* Habits.swift */; };
+		DF68E63D2845819A00D4E68B /* CupcakeCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E63C2845819A00D4E68B /* CupcakeCorner.swift */; };
 		DFEEDB4F282EEC7400D88DAD /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEEDB4E282EEC7400D88DAD /* Preset.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		DF68E6362839182400D4E68B /* Moonshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moonshot.swift; sourceTree = "<group>"; };
 		DF68E6382839751600D4E68B /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		DF68E63A284023BA00D4E68B /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		DF68E63C2845819A00D4E68B /* CupcakeCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCorner.swift; sourceTree = "<group>"; };
 		DFEEDB4E282EEC7400D88DAD /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				DF68E6362839182400D4E68B /* Moonshot.swift */,
 				DF68E6382839751600D4E68B /* Drawing.swift */,
 				DF68E63A284023BA00D4E68B /* Habits.swift */,
+				DF68E63C2845819A00D4E68B /* CupcakeCorner.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				DF42312E2810A3B600546F96 /* Multiplication.swift in Sources */,
 				DF2B1BD42832C59A006B0BDE /* Animations.swift in Sources */,
 				DF2B1BD62832EE7F006B0BDE /* iExpense.swift in Sources */,
+				DF68E63D2845819A00D4E68B /* CupcakeCorner.swift in Sources */,
 				DF2B1BC82832C3E4006B0BDE /* WeSplit.swift in Sources */,
 				DF2B1BD22832C582006B0BDE /* SleepCalculator.mlmodel in Sources */,
 				DF2B1BCE2832C4ED006B0BDE /* BetterRest.swift in Sources */,
