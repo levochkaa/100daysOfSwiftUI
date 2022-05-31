@@ -1,7 +1,7 @@
 import SwiftUI
 import CoreData
 
-class DataController: ObservableObject {
+class DataControllerBookworm: ObservableObject {
     let container = NSPersistentContainer(name: "Bookworm")
 
     init() {
@@ -249,7 +249,7 @@ struct EmojiRatingView: View {
 }
 
 struct Bookworm_Previews: PreviewProvider {
-    static var dataController = DataController()
+    static var dataController = DataControllerBookworm()
     static var previews: some View {
         Bookworm()
             .environment(\.managedObjectContext, dataController.container.viewContext)
