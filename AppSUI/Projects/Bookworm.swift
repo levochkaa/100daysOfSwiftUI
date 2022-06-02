@@ -30,7 +30,7 @@ struct Bookworm: View {
             List {
                 ForEach(books) { book in
                     NavigationLink {
-                        DetailView(book: book)
+                        DetailBookwormView(book: book)
                     } label: {
                         HStack {
                             EmojiRatingView(rating: book.rating)
@@ -75,7 +75,7 @@ struct Bookworm: View {
     }
 }
 
-struct DetailView: View {
+struct DetailBookwormView: View {
 
     let book: Book
 
@@ -129,7 +129,7 @@ struct DetailView: View {
 
     func deleteBook() {
         moc.delete(book)
-         try? moc.save()
+        try? moc.save()
         dismiss()
     }
 }
