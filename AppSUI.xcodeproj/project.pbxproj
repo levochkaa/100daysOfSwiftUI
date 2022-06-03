@@ -42,6 +42,7 @@
 		DFF70DD92848C69D002A4695 /* CachedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF70DD52848C69D002A4695 /* CachedUser+CoreDataProperties.swift */; };
 		DFF70DDC2848CF95002A4695 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFF70DDA2848CF95002A4695 /* CoreDataProject.xcdatamodeld */; };
 		DFF70DDF2848DB06002A4695 /* CoreDataJSONChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF70DDE2848DB06002A4695 /* CoreDataJSONChallenge.swift */; };
+		DFF70DE1284A483F002A4695 /* Instafilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF70DE0284A483F002A4695 /* Instafilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		DFF70DD52848C69D002A4695 /* CachedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DFF70DDB2848CF95002A4695 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		DFF70DDE2848DB06002A4695 /* CoreDataJSONChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataJSONChallenge.swift; sourceTree = "<group>"; };
+		DFF70DE0284A483F002A4695 /* Instafilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instafilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				DF68E63A284023BA00D4E68B /* Habits.swift */,
 				DF68E63C2845819A00D4E68B /* CupcakeCorner.swift */,
 				DF68E6482846563B00D4E68B /* Bookworm.swift */,
+				DFF70DE0284A483F002A4695 /* Instafilter.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				DFF70DD62848C69D002A4695 /* CachedFriend+CoreDataClass.swift in Sources */,
 				DFF70DD82848C69D002A4695 /* CachedUser+CoreDataClass.swift in Sources */,
 				DF68E6372839182400D4E68B /* Moonshot.swift in Sources */,
+				DFF70DE1284A483F002A4695 /* Instafilter.swift in Sources */,
 				DFF70DC92848C1CA002A4695 /* CoreDataJSONChallenge.xcdatamodeld in Sources */,
 				DF68E6492846563B00D4E68B /* Bookworm.swift in Sources */,
 				DF68E63B284023BA00D4E68B /* Habits.swift in Sources */,
@@ -426,6 +430,7 @@
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,6 +460,7 @@
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
