@@ -31,6 +31,7 @@
 		DF68E6492846563B00D4E68B /* Bookworm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6482846563B00D4E68B /* Bookworm.swift */; };
 		DF68E6732846877000D4E68B /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6712846877000D4E68B /* Movie+CoreDataClass.swift */; };
 		DF68E6742846877000D4E68B /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6722846877000D4E68B /* Movie+CoreDataProperties.swift */; };
+		DFE600AD284CAB6200FBC4B5 /* BucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE600AC284CAB6200FBC4B5 /* BucketList.swift */; };
 		DFEEDB4F282EEC7400D88DAD /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEEDB4E282EEC7400D88DAD /* Preset.swift */; };
 		DFF70DBA28469DE8002A4695 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF70DB828469DE8002A4695 /* Singer+CoreDataClass.swift */; };
 		DFF70DBB28469DE8002A4695 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF70DB928469DE8002A4695 /* Singer+CoreDataProperties.swift */; };
@@ -71,6 +72,7 @@
 		DF68E6482846563B00D4E68B /* Bookworm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookworm.swift; sourceTree = "<group>"; };
 		DF68E6712846877000D4E68B /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DF68E6722846877000D4E68B /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DFE600AC284CAB6200FBC4B5 /* BucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketList.swift; sourceTree = "<group>"; };
 		DFEEDB4E282EEC7400D88DAD /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
 		DFF70DB828469DE8002A4695 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Singer+CoreDataClass.swift"; path = "AppSUI/Projects/CoreDataProject/Singer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		DFF70DB928469DE8002A4695 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Singer+CoreDataProperties.swift"; path = "AppSUI/Projects/CoreDataProject/Singer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
@@ -115,6 +117,7 @@
 				DF68E63C2845819A00D4E68B /* CupcakeCorner.swift */,
 				DF68E6482846563B00D4E68B /* Bookworm.swift */,
 				DFF70DE0284A483F002A4695 /* Instafilter.swift */,
+				DFE600AC284CAB6200FBC4B5 /* BucketList.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				DF68E6472846355000D4E68B /* Bookworm.xcdatamodeld in Sources */,
 				DF2B1BD42832C59A006B0BDE /* Animations.swift in Sources */,
 				DF2B1BD62832EE7F006B0BDE /* iExpense.swift in Sources */,
+				DFE600AD284CAB6200FBC4B5 /* BucketList.swift in Sources */,
 				DF68E63D2845819A00D4E68B /* CupcakeCorner.swift in Sources */,
 				DF2B1BC82832C3E4006B0BDE /* WeSplit.swift in Sources */,
 				DFF70DC528476226002A4695 /* CoreDataProject.swift in Sources */,
@@ -430,6 +434,7 @@
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -460,6 +465,7 @@
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
