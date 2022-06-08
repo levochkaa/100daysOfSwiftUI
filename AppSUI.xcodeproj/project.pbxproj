@@ -21,6 +21,7 @@
 		DF42312E2810A3B600546F96 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42312D2810A3B600546F96 /* Multiplication.swift */; };
 		DF4231302810A3B900546F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF42312F2810A3B900546F96 /* Assets.xcassets */; };
 		DF4231332810A3B900546F96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4231322810A3B900546F96 /* Preview Assets.xcassets */; };
+		DF56F61A2850ED5C009C6674 /* PhotosNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56F6192850ED5C009C6674 /* PhotosNames.swift */; };
 		DF68E5832838FD7D00D4E68B /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5822838FD7D00D4E68B /* astronauts.json */; };
 		DF68E5852838FD8400D4E68B /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5842838FD8400D4E68B /* missions.json */; };
 		DF68E6372839182400D4E68B /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6362839182400D4E68B /* Moonshot.swift */; };
@@ -62,6 +63,7 @@
 		DF42312D2810A3B600546F96 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
 		DF42312F2810A3B900546F96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF4231322810A3B900546F96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF56F6192850ED5C009C6674 /* PhotosNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosNames.swift; sourceTree = "<group>"; };
 		DF68E5822838FD7D00D4E68B /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		DF68E5842838FD8400D4E68B /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		DF68E6362839182400D4E68B /* Moonshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moonshot.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				DF68E6482846563B00D4E68B /* Bookworm.swift */,
 				DFF70DE0284A483F002A4695 /* Instafilter.swift */,
 				DFE600AC284CAB6200FBC4B5 /* BucketList.swift */,
+				DF56F6192850ED5C009C6674 /* PhotosNames.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				DF42312E2810A3B600546F96 /* Multiplication.swift in Sources */,
 				DF68E6472846355000D4E68B /* Bookworm.xcdatamodeld in Sources */,
 				DF2B1BD42832C59A006B0BDE /* Animations.swift in Sources */,
+				DF56F61A2850ED5C009C6674 /* PhotosNames.swift in Sources */,
 				DF2B1BD62832EE7F006B0BDE /* iExpense.swift in Sources */,
 				DFE600AD284CAB6200FBC4B5 /* BucketList.swift in Sources */,
 				DF68E63D2845819A00D4E68B /* CupcakeCorner.swift in Sources */,

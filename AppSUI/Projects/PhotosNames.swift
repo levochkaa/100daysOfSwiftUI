@@ -1,0 +1,150 @@
+import SwiftUI
+
+struct ImageWithName: Identifiable, Codable, Equatable {
+    var id: UUID
+    var name: String
+    var imageData: Data
+
+    var image: Image? {
+        if let uiImage = UIImage(data: imageData) {
+            return Image(uiImage: uiImage)
+        }
+        return nil
+    }
+
+    static func ==(lhs: ImageWithName, rhs: ImageWithName) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
+extension PhotosNames {
+    @MainActor class ViewModel: ObservableObject {
+
+        let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPhotos")
+
+        @Published private(set) var images: [ImageWithName]
+
+        init() {
+            do {
+                let data = try Data(contentsOf: savePath)
+                images = try JSONDecoder().decode([ImageWithName].self, from: data)
+            } catch {
+                images = []
+            }
+        }
+
+        func addImage(image: UIImage, name: String) {
+            if let pngData = image.pngData() {
+                let newImage = ImageWithName(id: UUID(), name: name, imageData: pngData)
+                images.append(newImage)
+                save()
+            }
+        }
+
+        func save() {
+            do {
+                let data = try JSONEncoder().encode(images)
+                try data.write(to: savePath, options: [.atomic, .completeFileProtection])
+            } catch {
+                print("Unable to save data.")
+            }
+        }
+    }
+}
+
+struct PhotosNames: View {
+
+    @State private var inputImage: UIImage?
+    @State private var showingImagePicker = false
+
+    @StateObject private var viewModel = ViewModel()
+
+    var body: some View {
+        NavigationView {
+            List(viewModel.images) { image in
+                if let wrappedImage = image.image {
+                    NavigationLink(destination: PhotosNamesDetailView(image: wrappedImage, name: image.name)) {
+                        HStack {
+                            wrappedImage
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                            Text(image.name)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Photos & Names")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingImagePicker = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showingImagePicker) {
+            ImagePicker(image: $inputImage)
+        }
+        .onChange(of: inputImage) { _ in
+            if let image = inputImage {
+                alertTextField(title: "Image name", message: "Please enter name for the imported image", hintText: "Unknown", primaryTitle: "Enter", secondaryTitle: "Cancel", primaryAction: { text in
+                    viewModel.addImage(image: image, name: text == "" ? "Unknown" : text)
+                }, secondaryAction: {
+                    viewModel.addImage(image: image, name: "Unknown")
+                })
+            }
+        }
+    }
+}
+
+struct PhotosNamesDetailView: View {
+
+    let image: Image
+    let name: String
+
+    var body: some View {
+        image
+            .resizable()
+            .scaledToFit()
+            .navigationTitle(name)
+    }
+}
+
+extension View {
+    func alertTextField(title: String, message: String, hintText: String, primaryTitle: String, secondaryTitle: String, primaryAction: @escaping (String) -> (), secondaryAction: @escaping () -> ()) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addTextField { field in
+            field.placeholder = hintText
+        }
+        alert.addAction(.init(title: secondaryTitle, style: .cancel, handler: { _ in
+            secondaryAction()
+        }))
+        alert.addAction(.init(title: primaryTitle, style: .default, handler: { _ in
+            if let text = alert.textFields?[0].text {
+                primaryAction(text)
+            } else {
+                primaryAction("")
+            }
+        }))
+        rootController().present(alert, animated: true, completion: nil)
+    }
+    func rootController() -> UIViewController {
+        guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+            return .init()
+        }
+        guard let root = screen.windows.first?.rootViewController else {
+            return .init()
+        }
+        return root
+    }
+
+}
+
+struct PhotosNames_Previews: PreviewProvider {
+    static var previews: some View {
+        PhotosNames()
+            .preferredColorScheme(.dark)
+    }
+}
