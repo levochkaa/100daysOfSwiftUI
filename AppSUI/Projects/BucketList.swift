@@ -23,7 +23,7 @@ struct Location: Identifiable, Codable, Equatable {
     }
 }
 
-struct Result: Codable {
+struct ResultBucket: Codable {
     let query: Query
 }
 
@@ -264,7 +264,7 @@ struct EditBucketListView: View {
 
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
-            let items = try JSONDecoder().decode(Result.self, from: data)
+            let items = try JSONDecoder().decode(ResultBucket.self, from: data)
             viewModel.pages = items.query.pages.values.sorted()
             viewModel.loadingState = .loaded
         } catch {
