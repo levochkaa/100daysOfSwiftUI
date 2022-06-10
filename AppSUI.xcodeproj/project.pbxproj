@@ -26,6 +26,7 @@
 		DF56F620285135A7009C6674 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DF56F61F285135A7009C6674 /* CodeScanner */; };
 		DF56F6222851573F009C6674 /* HotProspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56F6212851573F009C6674 /* HotProspects.swift */; };
 		DF56F62428537FEB009C6674 /* Flashzilla.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56F62328537FEB009C6674 /* Flashzilla.swift */; };
+		DF56F6262853CE63009C6674 /* LayoutGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56F6252853CE63009C6674 /* LayoutGeometry.swift */; };
 		DF68E5832838FD7D00D4E68B /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5822838FD7D00D4E68B /* astronauts.json */; };
 		DF68E5852838FD8400D4E68B /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5842838FD8400D4E68B /* missions.json */; };
 		DF68E6372839182400D4E68B /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6362839182400D4E68B /* Moonshot.swift */; };
@@ -70,6 +71,7 @@
 		DF56F6192850ED5C009C6674 /* PhotosNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosNames.swift; sourceTree = "<group>"; };
 		DF56F6212851573F009C6674 /* HotProspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspects.swift; sourceTree = "<group>"; };
 		DF56F62328537FEB009C6674 /* Flashzilla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashzilla.swift; sourceTree = "<group>"; };
+		DF56F6252853CE63009C6674 /* LayoutGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGeometry.swift; sourceTree = "<group>"; };
 		DF68E5822838FD7D00D4E68B /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		DF68E5842838FD8400D4E68B /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		DF68E6362839182400D4E68B /* Moonshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moonshot.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				DF56F6192850ED5C009C6674 /* PhotosNames.swift */,
 				DF56F6212851573F009C6674 /* HotProspects.swift */,
 				DF56F62328537FEB009C6674 /* Flashzilla.swift */,
+				DF56F6252853CE63009C6674 /* LayoutGeometry.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				DFE600AD284CAB6200FBC4B5 /* BucketList.swift in Sources */,
 				DF68E63D2845819A00D4E68B /* CupcakeCorner.swift in Sources */,
 				DF2B1BC82832C3E4006B0BDE /* WeSplit.swift in Sources */,
+				DF56F6262853CE63009C6674 /* LayoutGeometry.swift in Sources */,
 				DFF70DC528476226002A4695 /* CoreDataProject.swift in Sources */,
 				DFF70DDC2848CF95002A4695 /* CoreDataProject.xcdatamodeld in Sources */,
 				DF2B1BD22832C582006B0BDE /* SleepCalculator.mlmodel in Sources */,
