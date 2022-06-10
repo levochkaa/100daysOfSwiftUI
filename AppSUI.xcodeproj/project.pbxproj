@@ -25,6 +25,7 @@
 		DF56F61D2851195F009C6674 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = DF56F61C2851195F009C6674 /* SamplePackage */; };
 		DF56F620285135A7009C6674 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DF56F61F285135A7009C6674 /* CodeScanner */; };
 		DF56F6222851573F009C6674 /* HotProspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56F6212851573F009C6674 /* HotProspects.swift */; };
+		DF56F62428537FEB009C6674 /* Flashzilla.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56F62328537FEB009C6674 /* Flashzilla.swift */; };
 		DF68E5832838FD7D00D4E68B /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5822838FD7D00D4E68B /* astronauts.json */; };
 		DF68E5852838FD8400D4E68B /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = DF68E5842838FD8400D4E68B /* missions.json */; };
 		DF68E6372839182400D4E68B /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6362839182400D4E68B /* Moonshot.swift */; };
@@ -68,6 +69,7 @@
 		DF4231322810A3B900546F96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF56F6192850ED5C009C6674 /* PhotosNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosNames.swift; sourceTree = "<group>"; };
 		DF56F6212851573F009C6674 /* HotProspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspects.swift; sourceTree = "<group>"; };
+		DF56F62328537FEB009C6674 /* Flashzilla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashzilla.swift; sourceTree = "<group>"; };
 		DF68E5822838FD7D00D4E68B /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		DF68E5842838FD8400D4E68B /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		DF68E6362839182400D4E68B /* Moonshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moonshot.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				DFE600AC284CAB6200FBC4B5 /* BucketList.swift */,
 				DF56F6192850ED5C009C6674 /* PhotosNames.swift */,
 				DF56F6212851573F009C6674 /* HotProspects.swift */,
+				DF56F62328537FEB009C6674 /* Flashzilla.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				DF2B1BCE2832C4ED006B0BDE /* BetterRest.swift in Sources */,
 				DF68E6732846877000D4E68B /* Movie+CoreDataClass.swift in Sources */,
 				DF2B1BCC2832C46A006B0BDE /* ExtensionsModifiers.swift in Sources */,
+				DF56F62428537FEB009C6674 /* Flashzilla.swift in Sources */,
 				DFF70DD92848C69D002A4695 /* CachedUser+CoreDataProperties.swift in Sources */,
 				DF2B1BCA2832C429006B0BDE /* GuessTheFlag.swift in Sources */,
 				DF68E6392839751600D4E68B /* Drawing.swift in Sources */,
@@ -454,6 +458,7 @@
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AppSUI;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We want to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to get where the image was taken.";
@@ -461,8 +466,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,6 +493,7 @@
 				DEVELOPMENT_TEAM = 7Z2WHPKU8W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AppSUI;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We want to scan QR codes.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We want to get where the image was taken.";
@@ -494,8 +501,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
