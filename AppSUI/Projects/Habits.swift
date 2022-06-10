@@ -7,7 +7,7 @@ struct Activity: Codable, Identifiable, Equatable {
     var times: Int = 0
 }
 
-class ViewModel: ObservableObject {
+class ViewModelHabits: ObservableObject {
     @Published var activities = [Activity]() {
         didSet {
             if let encoded = try? JSONEncoder().encode(activities) {
@@ -28,7 +28,7 @@ struct HabitsView: View {
 
     @State private var showAddActivity = false
 
-    @StateObject var data = ViewModel()
+    @StateObject var data = ViewModelHabits()
 
     var body: some View {
         NavigationView {
@@ -69,7 +69,7 @@ struct DetailActivityView: View {
 
     @State var activity: Activity
 
-    @ObservedObject var data: ViewModel
+    @ObservedObject var data: ViewModelHabits
 
     var body: some View {
         ScrollView {
@@ -96,7 +96,7 @@ struct AddActivityView: View {
     @State private var title = ""
     @State private var description = ""
 
-    @ObservedObject var data: ViewModel
+    @ObservedObject var data: ViewModelHabits
 
     @Environment(\.dismiss) var dismiss
 
