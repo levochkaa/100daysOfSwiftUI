@@ -38,6 +38,7 @@
 		DF68E6732846877000D4E68B /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6712846877000D4E68B /* Movie+CoreDataClass.swift */; };
 		DF68E6742846877000D4E68B /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E6722846877000D4E68B /* Movie+CoreDataProperties.swift */; };
 		DFB958B328554D32000344A3 /* DicesProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB958B228554D32000344A3 /* DicesProject.swift */; };
+		DFC32BC4285771420065401F /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = DFC32BC3285771420065401F /* resorts.json */; };
 		DFE600AD284CAB6200FBC4B5 /* BucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE600AC284CAB6200FBC4B5 /* BucketList.swift */; };
 		DFEEDB4F282EEC7400D88DAD /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEEDB4E282EEC7400D88DAD /* Preset.swift */; };
 		DFF70DBA28469DE8002A4695 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF70DB828469DE8002A4695 /* Singer+CoreDataClass.swift */; };
@@ -84,6 +85,7 @@
 		DF68E6712846877000D4E68B /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DF68E6722846877000D4E68B /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DFB958B228554D32000344A3 /* DicesProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicesProject.swift; sourceTree = "<group>"; };
+		DFC32BC3285771420065401F /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
 		DFE600AC284CAB6200FBC4B5 /* BucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketList.swift; sourceTree = "<group>"; };
 		DFEEDB4E282EEC7400D88DAD /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
 		DFF70DB828469DE8002A4695 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Singer+CoreDataClass.swift"; path = "AppSUI/Projects/CoreDataProject/Singer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -149,6 +151,7 @@
 				DF68E6452846355000D4E68B /* Bookworm.xcdatamodeld */,
 				DF68E5822838FD7D00D4E68B /* astronauts.json */,
 				DF68E5842838FD8400D4E68B /* missions.json */,
+				DFC32BC3285771420065401F /* resorts.json */,
 				DF2B1BD12832C582006B0BDE /* SleepCalculator.mlmodel */,
 				DF2B1BC128324BA8006B0BDE /* start.txt */,
 			);
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC32BC4285771420065401F /* resorts.json in Resources */,
 				DF4231332810A3B900546F96 /* Preview Assets.xcassets in Resources */,
 				DF68E5852838FD8400D4E68B /* missions.json in Resources */,
 				DF2B1BC228324BA8006B0BDE /* start.txt in Resources */,
@@ -486,9 +490,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyApps.AppSUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -521,9 +528,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyApps.AppSUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
