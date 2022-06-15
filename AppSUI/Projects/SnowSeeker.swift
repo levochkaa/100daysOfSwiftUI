@@ -197,7 +197,7 @@ struct ResortView: View {
     @State private var selectedFacility: Facility?
     @State private var showingFacility = false
 
-    @EnvironmentObject var favorites: Favorites
+    @EnvironmentObject var favorites: FavoritesSnowSeeker
 
     @Environment(\.dynamicTypeSize) var typeSize
     @Environment(\.horizontalSizeClass) var sizeClass
